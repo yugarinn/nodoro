@@ -1,0 +1,27 @@
+{
+  "name": "nodoro",
+  "version": "1.0.0",
+  "description": "A CLI pomodoro implementation",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiouve/nodoro.git"
+  },
+  "keywords": [
+    "pomodoro",
+    "cli",
+    "productivity"
+  ],
+  "author": "sergiouve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiouve/nodoro/issues"
+  },
+  "homepage": "https://github.com/sergiouve/nodoro#readme",
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
+}
