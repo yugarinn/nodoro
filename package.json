@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A CLI pomodoro implementation",
   "main": "bin/index.js",
+  "bin": {
+    "nodoro": "./bin/index.js"
+  },
   "scripts": {
     "test": "npm run test"
   },
@@ -20,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/sergiouve/nodoro/issues"
   },
-  "homepage": "https://github.com/sergiouve/nodoro#readme",
-  "dependencies": {
-    "commander": "^6.1.0"
-  }
+  "homepage": "https://github.com/sergiouve/nodoro#readme"
 }

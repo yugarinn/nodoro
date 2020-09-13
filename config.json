@@ -1,0 +1,6 @@
+{
+  "pomodoroLenght": 25,
+  "breakLength": 5,
+  "cyclesLenght": 4,
+  "storagePath": "/home/sergio/.nodoro"
+}
