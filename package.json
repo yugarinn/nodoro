@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/sergiouve/nodoro/issues"
   },
-  "homepage": "https://github.com/sergiouve/nodoro#readme"
+  "homepage": "https://github.com/sergiouve/nodoro#readme",
+  "dependencies": {
+    "terminal-kit": "^1.43.0"
+  }
 }
