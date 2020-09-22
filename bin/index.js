@@ -15,7 +15,7 @@ timer.start()
 const loop = () => {
   process.stdout.write('\x1Bc')
   process.stdout.write(timer.status())
-  process.stdout.write(`${EOL}${EOL}s: pause/resume | r: restart`)
+  process.stdout.write(`${EOL}${EOL}s: pause/resume | r: restart | Ctrl-c: exit`)
 }
 
 stdin.on('data', (input) => {
