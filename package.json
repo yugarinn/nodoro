@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/sergiouve/nodoro#readme",
   "dependencies": {
-    "terminal-kit": "^1.43.0"
+    "play-sound": "^1.1.3"
   }
 }
