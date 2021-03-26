@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/sergiouve/nodoro/issues"
   },
-  "homepage": "https://github.com/sergiouve/nodoro#readme",
-  "dependencies": {
-    "play-sound": "^1.1.3"
-  }
+  "homepage": "https://github.com/sergiouve/nodoro#readme"
 }
