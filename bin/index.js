@@ -2,6 +2,7 @@
 
 const { EOL } = require('os')
 
+const config = require('../lib/config')()
 const Timer = require('../lib/Timer')
 const Noiser = require('../lib/Noiser')
 
@@ -15,6 +16,8 @@ stdin.setEncoding( 'utf8' );
 
 timer.reset()
 timer.start()
+
+if (config.autoplay) noiser.toggle()
 
 const loop = () => {
   process.stdout.write('\x1Bc')

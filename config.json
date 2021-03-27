@@ -2,5 +2,6 @@
   "pomodoroLenght": 1,
   "breakLength": 5,
   "cyclesLenght": 4,
-  "storagePath": "/home/sergio/.nodoro"
+  "storagePath": "/home/sergio/.nodoro",
+  "autoplay": true
 }
