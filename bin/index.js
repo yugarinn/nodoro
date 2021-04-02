@@ -21,7 +21,7 @@ if (config.autoplay) noiser.toggle()
 
 const loop = () => {
   process.stdout.write('\x1Bc')
-  process.stdout.write(timer.print())
+  process.stdout.write(timer.tick())
   process.stdout.write(`${EOL}${EOL}s: pause/resume | r: restart | m: mute/unmute | Ctrl-c: exit`)
 }
 
@@ -30,9 +30,9 @@ stdin.on('data', (input) => {
     process.exit();
   }
 
-  if (input === '\u0073' && timer.getState() == 'RUNNING') {
+  if (input === '\u0073' && timer.getState() === 'RUNNING') {
     timer.stop()
-  } else if (input === '\u0073' && ['STOPPED', 'CLEAN'].includes(timer.getState())) {
+  } else if (input === '\u0073' && timer.getState() === 'STOPPED') {
     timer.start()
   }
 
