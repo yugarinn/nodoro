@@ -21,12 +21,11 @@ if (config.autoplay) noiser.toggle()
 
 const loop = () => {
   process.stdout.write('\x1Bc')
-  process.stdout.write(timer.tick())
+  process.stdout.write(timer.print())
   process.stdout.write(`${EOL}${EOL}s: pause/resume | r: restart | m: mute/unmute | Ctrl-c: exit`)
 }
 
 stdin.on('data', (input) => {
-  console.log(input)
   if (input === '\u0003') {
     process.exit();
   }
