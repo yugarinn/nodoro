@@ -4,5 +4,5 @@
   "longBreakLength": 10,
   "cyclesLength": 4,
   "storagePath": "~/.config/nodoro",
-  "autoplay": false
+  "autoplay": true
 }
