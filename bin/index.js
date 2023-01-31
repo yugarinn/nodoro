@@ -7,6 +7,11 @@ const Logger = require('../lib/Logger')
 const Timer = require('../lib/Timer')
 const Noiser = require('../lib/Noiser')
 
+const sButton = '\u0073'
+const rButton = '\u0072'
+const mButton = '\u006D'
+const ctrlCButton = '\u0003'
+
 const logger = new Logger()
 const timer = new Timer(logger)
 const noiser = new Noiser()
@@ -35,26 +40,26 @@ const loop = () => {
 }
 
 stdin.on('data', (input) => {
-  if (input === '\u0003') {
+  if (input === ctrlCButton) {
     logger.clean()
     process.exit();
   }
 
-  if (input === '\u0073' && timer.getState() === 'RUNNING') {
+  if (input === sButton && timer.getState() === 'RUNNING') {
     timer.stop()
     if (timerAndNoiserAreBinded) noiser.stop()
-  } else if (input === '\u0073' && timer.getState() === 'STOPPED') {
+  } else if (input === sButton && timer.getState() === 'STOPPED') {
     timer.start()
     if (timerAndNoiserAreBinded) noiser.play()
   }
 
-  if (input === '\u0072') {
+  if (input === rButton) {
     timer.reset()
   }
 
-  if (input === '\u006D') {
+  if (input === mButton) {
     noiser.toggle()
   }
 })
 
-setInterval(loop, 100)
+setInterval(loop, 200)
