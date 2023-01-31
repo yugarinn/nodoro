@@ -1,5 +1,4 @@
 # Nodoro
-
 A cli based pomodoro tool.
 
                                                 ░░
@@ -42,6 +41,9 @@ A cli based pomodoro tool.
 ``` sh
 $ nodoro
 
+  Focus - 44:15 minutes left
+
+  s: pause/resume | r: restart | m: mute | Ctrl-c: exit
 ```
 
 ## Dependencies

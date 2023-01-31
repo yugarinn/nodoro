@@ -1,7 +1,6 @@
 {
-  "pomodoroLength": 10,
-  "shortBreakLength": 5,
-  "longBreakLength": 600,
+  "pomodoroLength": 2700,
+  "shortBreakLength": 300,
   "cyclesLength": 4,
   "storagePath": "~/.config/nodoro",
   "autoplay": true
