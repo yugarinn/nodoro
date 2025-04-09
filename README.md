@@ -41,7 +41,7 @@ A cli based pomodoro tool.
 ``` sh
 $ nodoro
 
-  Focus - 44:15 minutes left
+  Focus 2/4 (2) - 44:15 minutes left
 
   s: pause/resume | r: restart | m: mute | Ctrl-c: exit
 ```
